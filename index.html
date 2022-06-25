@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Projecto Web</title>
+    <link rel="shortcut icon" href="img/logoweb.png">                                           <!-- Logo en la parte de arriba del navegador -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">                               <!-- link hacia mi css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">                                 <!-- agregar la fuente desde google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                        <!-- agregar la fuente desde google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet"> <!-- agregar la fuente desde google fonts-->
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css"> <!-- animaciones con la pagina Wow.js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">                           <!-- link para utilizar boostrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">                         <!-- tag para asegurarnos que la pagina sea responsive -->  
+</head>
+<body>
+        <header class="navbar navbar-expand-lg navbar-dark sticky-top menuInicio"> <!-- Menu Principal  -->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="img/logoweb.png" height="80px"/></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active fs-4" aria-current="page" href="index.html">inicio</a>
+                      <a class="nav-link fs-4" href="pages/about.html">Sobre Nosotros</a>
+                      <a class="nav-link fs-4" href="pages/ubicacion.html">Ubicacion</a>
+                      <a class="nav-link fs-4" href="pages/contacto.html">Contacto</a>
+                      <a class="nav-link fs-4" href="pages/productos.html">Productos</a>
+                    </div>
+                </div>
+            </div>                                                                 <!-- Aca termina el Menu Principal -->
+            <nav class="navbar navbar-dark">  <!-- Buscador Lateral -->
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                  </form>
+                </div>
+            </nav>
+        </header>      
+    <article>               <!-- Carrusel de imagenes de portada -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">     
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/carrousel1.jpg" class="d-block w-100" alt="imagen de portada" title="imagen de portada"/>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carrousel2.webp" class="d-block w-100" alt="Logo de MSI" title="Productos MSI"/>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carrousel3.webp" class="d-block w-100" alt="Accesorios Gaming" title="Accesorios Gaming"/>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carrousel4.webp" class="d-block w-100" alt="Notebooks" title="Notebooks Gaming"/>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carrousel5.jpg" class="d-block w-100" aalt="imagen de portada secundaria" title="imagen de portada secundaria"/>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carrousel6.webp" class="d-block w-100" aalt="Auriculares" title="imagen de portada Auriculares"/>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+    </article>              <!-- Aca termina el carrusel -->
+
+    <article class="row">    
+        <nav class="menuCategorias col-lg-2 col-xs-12">  <!-- Este es el menu Lateral de Categorias -->
+            <ul>
+                <li>Equipos y Notebooks</li>                 
+                <li>Consolas de Video Juego</li>
+                <li>Procesadores y coolers cpus</li>
+                <li>Mothers y combos</li>
+                <li>Memorias Ram</li>
+                <li>Almacenamiento</li>
+                <li>Placas de Video y otras</li>
+                <li>Gabinetes, fuentes y coolers</li>
+                <li>Monitores y Televisores</li>
+                <li>Teclados y mouses</li>
+            </ul>
+        </nav>
+        <nav class="informe col-lg-10 col-xs-12 justify-content-center">    <!-- El titulo y presentacion de la pagina en el centro -->
+            <h1>Encontraras los mejores productos gaming en este sitio web</h1>
+            <p>Las mejores ofertas en un solo lugar<br />
+           Brindamos asesoramiento para el armado de tu pc, asi como tambien soporte tecnico<br />
+           para los problemas que puedas tener, podes contactarnos atraves de nuestra pagina<br />
+             </p>
+             <h2 class="subtitulo">Ofertas</h2>
+            <div class="imagenes row justify-content-center">               <!-- Creo fila contenedora para cards de los productos -->          
+              <div class="card" style="width: 30rem;">                      <!-- Primera Card -->
+                <img src="img/teclado retro.png" class="card-img-top" alt="teclado" title="Teclado Retroiluminado RedDragon"/>
+                <div class="card-body">
+                  <h5 class="card-title">Teclado RetroIluminado RedDragon</h5>
+                  <p class="card-text">
+                    <p>$5000</p>
+                  <a href="/pages/productos.html" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 30rem;">                       <!-- Segunda Card -->
+                <img src="img/mouse 3.png" class="card-img-top" alt="Placa de video" title="Placa 1650"/>
+                <div class="card-body">
+                  <h5 class="card-title">Mouse ASUS ROG STRIX Evolve RGB</h5>
+                  <p class="card-text">$5.350</p>
+                  <a href="/pages/productos.html" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 30rem;">                          <!-- Tercera Card -->
+                <img src="img/placa video.png" class="card-img-top" alt="Placa de video" title="Placa 1650"/>
+                <div class="card-body">
+                  <h5 class="card-title">Placa de Video ASUS GeForce GTX 1650</h5>
+                  <p class="card-text">$40.000</p>
+                  <a href="/pages/productos.html" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 30rem;">                            <!-- Cuarta Card -->
+                <img src="img/mother.png" class="card-img-top" alt="Placa madre" title="Mother"/>
+                <div class="card-body">
+                  <h5 class="card-title">Mother ASUS ROG STRIX Z590-I GAMING WIFI</h5>
+                  <p class="card-text">$40.000</p>
+                  <a href="/pages/productos.html" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 30rem;">                             <!-- Quinta Card -->
+                <img src="img/mouse 2.png" class="card-img-top" alt="Mouse retroiluminado" title="Mouse"/>
+                <div class="card-body">
+                  <h5 class="card-title">Mouse Glorious Model D Minus - Matte White</h5>
+                  <p class="card-text">$6.350</p>
+                  <a href="/pages/productos.html" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+              <div class="card" style="width: 30rem;">                              <!-- Sexta Card -->
+                <img src="img/placa.png" class="card-img-top" alt="Placa de video evga" title="placa EVGA"/>
+                <div class="card-body">
+                  <h5 class="card-title">VIDEO GEFORCE RTX 3070 8GB EVGA FTW3</h5>
+                  <p class="card-text">$180.000</p>
+                  <a href="/pages/productos.html" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+        </nav>
+    </article>
+
+    <footer class="pieDePagina">                <!-- Footer -->
+        <img src="img/logoweb.png" alt="logo de la web"  title="logo web" class="logo"/>
+        <p>
+        <b>Contacto</b> <br />
+        3815998877<br />
+        Av. Juan Bautista Alberdi 1233, C1424 CABA<br />
+        </p>
+        <a href="https://www.facebook.com"><img src="img/facebook.png" width="40 px" class="face"/></a> 
+        <a href="https://www.instagram.com"><img src="img/instagram.png" width="40 px"/></a> 
+        <a href="https://www.twitter.com"><img src="img/twitter.png" width="40 px"/></a> 
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><!-- agrego el script de boostrap al final del body -->
+</body>
+</html>
+

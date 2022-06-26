@@ -1,0 +1,29 @@
+// Cabecera del Sitio Web
+
+    //Menu Principal
+    .menuInicio{
+    padding: 1rem;
+    background-color: $negro;
+    a{
+        margin-left: 2rem;
+        &:hover{
+            text-decoration: underline;
+            }
+        }
+    }
+    
+    //Menu Lateral
+    .menuCategorias{
+    color: $negro;
+    li{
+        list-style: none;
+        background-color: $menuCatColor;
+        text-align: center;
+        margin: 1%;
+        padding: 1%;
+        &:hover{
+            background-color: #000000;
+            color: $menuCatColor;
+            }
+        }
+    }

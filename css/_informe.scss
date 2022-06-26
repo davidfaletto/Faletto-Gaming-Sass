@@ -1,0 +1,50 @@
+//Area Central Principal Titulo, subtitulo e Imagenes
+.informe{
+    padding: 2%;
+    border-radius: 5% 2%;
+    color: $blanco;
+    display: flex;                  /* del tipo flexible en columnas wrap */
+    flex-flow: column wrap;
+    background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);    /* Gradiente de fondo */
+    p{
+        text-align: center;
+        font-size: 20px;
+        color: $blanco;
+    }
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    h2{
+        font-size: 30px;            
+        text-align: center;
+        border:1px solid $negro;
+        border-radius: 10px;
+    }
+}
+.imagenes{
+    img{            //Imagenes con efecto zoom del index (dentro de las Tarjetas)
+    padding: 3%;
+    width:80%;
+    transition: all 1s;
+    &:hover{
+        width: 85%;
+        }
+    }
+    .card{          //Tarjetas del Index
+    background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
+    text-align: center;
+    align-items: center;
+    &:hover{
+        background-image: linear-gradient(to bottom, #5a5a5a, #000000, #5a5a5a);
+        }
+        a{
+        background-color: $negro;
+        border: 1px solid $blanco;
+            &:hover{
+            background-color: #1f1c1c;
+            border: none;
+            }
+        }    
+    }
+}

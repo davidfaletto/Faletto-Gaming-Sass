@@ -14,7 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">                         <!-- tag para asegurarnos que la pagina sea responsive -->  
 </head>
 <body>
-        <header class="navbar navbar-expand-lg navbar-dark sticky-top menuInicio"> <!-- Menu Principal  -->
+        <!-- Menu Principal  -->
+        <header class="navbar navbar-expand-lg navbar-dark sticky-top menuInicio"> 
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><img src="img/logoweb.png" height="80px"/></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +30,11 @@
                       <a class="nav-link fs-4" href="pages/productos.html">Productos</a>
                     </div>
                 </div>
-            </div>                                                                 <!-- Aca termina el Menu Principal -->
-            <nav class="navbar navbar-dark">  <!-- Buscador Lateral -->
+            </div>
+            <a class="navbar-brand" href="/pages/productos.html"><img src="img/carro.png" height="30px"/></a> <!-- carrito de compras -->
+            <!-- Aca termina el Menu Principal -->
+            <nav class="navbar navbar-dark">
+                <!-- Buscador Lateral -->
                 <div class="container-fluid">
                   <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar Productos" aria-label="Search">
@@ -39,7 +43,7 @@
                 </div>
             </nav>
         </header>      
-    <article>               <!-- Carrusel de imagenes de portada -->
+    <article class="row">               <!-- Carrusel de imagenes de portada -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">     
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -87,8 +91,8 @@
                 <li>Teclados y mouses</li>
             </ul>
         </nav>
-        <nav class="informe col-lg-10 col-xs-12 justify-content-center">    <!-- El titulo y presentacion de la pagina en el centro -->
-            <h1>Encontraras los mejores productos gaming en este sitio web</h1>
+        <nav class="informe col-lg-10 col-xs-12 justify-content-center">    <!-- El titulo y presentacion de la pagina en el centro --> 
+          <h1>Encontraras los mejores productos gaming en este sitio web</h1>
             <p>Las mejores ofertas en un solo lugar<br />
            Brindamos asesoramiento para el armado de tu pc, asi como tambien soporte tecnico<br />
            para los problemas que puedas tener, podes contactarnos atraves de nuestra pagina<br />

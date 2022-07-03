@@ -1,0 +1,8 @@
+* Se agrega un meta description con la informacion de que se trata el sitio
+* Se agrega un meta keywords con las palabras claves : teclado, mouse, placa de video, ASUS, EVGA, RTX, RX, MSI, GAMING, JUEGOS, PC, DESKTOP, NOTEBOOKS
+*Se cambiaron los titulos de cada pagina web para que al usuario le sea mas intuitivo leer de que se trata cada una.
+index : Sitio Principal de Venta de Gaming
+about: Acerca de Nosotros | Venta de Gaming<
+contacto: Contactanos | Venta de Gaming
+productos: Productos | Venta de Gaming<
+ubicacion: Donde Encontrarnos | Venta de Gaming 

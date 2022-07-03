@@ -33,25 +33,25 @@
   color: #dbd7d7;
 }
 
-.informe {
+.informe, .about {
   padding: 2%;
-  border-radius: 5% 2%;
   color: #ffffff;
-  display: flex; /* del tipo flexible en columnas wrap */
+  display: flex;
   flex-flow: column wrap;
-  background-image: linear-gradient(to bottom, #000000, #5a5555, #000000); /* Gradiente de fondo */
+  background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
 }
-.informe p {
-  text-align: center;
+.informe p, .about p {
   font-size: 20px;
+  text-align: center;
   color: #ffffff;
 }
-.informe h1 {
+.informe h1, .about h1 {
   font-size: 40px;
   text-align: center;
+  padding: 2%;
 }
-.informe h2 {
-  font-size: 30px;
+.informe h2, .about h2 {
+  font-size: 35px;
   text-align: center;
   border: 1px solid #000000;
   border-radius: 10px;
@@ -108,10 +108,15 @@
 }
 
 .about { /* Estilo de la Pagina Acerca de Nosotros */
-  color: #ffffff;
-  padding: 3%;
-  text-align: center;
-  background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
+  border: 3px solid rgb(56, 55, 53);
+  border-radius: 15px;
+  transition: all 1s;
+}
+.about:hover {
+  width: 80%;
+}
+.about p {
+  font-size: 30px;
 }
 
 legend { /* Estilo al texto relacionado con cada campo del formulario */

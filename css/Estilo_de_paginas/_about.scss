@@ -1,7 +1,14 @@
 //Pagina Acerca de Nosotros
 .about{                             /* Estilo de la Pagina Acerca de Nosotros */
-    color: $blanco;
-    padding: 3%;
-    text-align: center;
-    background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
-}
+    @extend .informe;               //extiendo las propiedades de la pagina informe
+    border: 3px solid rgb(56, 55, 53);
+    border-radius: 15px;
+    transition: all 1s;
+    &:hover{
+        width: 80%;
+       }
+       p{
+        font-size: 30px;
+       }
+    }
+    

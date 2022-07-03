@@ -1,23 +1,22 @@
 //Area Central Principal Titulo, subtitulo e Imagenes
 .informe{
-    padding: 2%;
-    border-radius: 5% 2%;
-    color: $blanco;
-    display: flex;                  /* del tipo flexible en columnas wrap */
-    flex-flow: column wrap;
-    background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);    /* Gradiente de fondo */
-    p{
-        text-align: center;
-        font-size: 20px;
+        padding: map-get($informe, padding);
+        border-radius: map-get($informe, bordes);
+        color: map-get($informe, color);
+        display: map-get($informe, modo);
+        flex-flow: map-get($informe, responsive);
+        background-image: map-get($informe, imagenFondo);
+    
+    p{  
+        @include estiloGeneral(20px, center);
         color: $blanco;
     }
     h1{
-        font-size: 40px;
-        text-align: center;
+        @include estiloGeneral(40px, center);
+        padding: 2%;
     }
     h2{
-        font-size: 30px;            
-        text-align: center;
+        @include estiloGeneral(35px, center);
         border:1px solid $negro;
         border-radius: 10px;
     }
